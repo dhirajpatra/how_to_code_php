@@ -1,0 +1,28 @@
+<?php
+
+return $settings = [
+    'ROOT' => '/csvtest',
+    'HOST' => 'localhost',
+    'DB_HOST' => 'localhost',
+    'DB_NAME' => '****',
+    'DB_USER' => '****',
+    'DB_PASS' => '*****',
+    'MAIL' => [
+        'TO' => ['****', '*****'],
+        'FROM' => '*****'
+    ],
+    'MAILER' => [
+        'transport_agent' => '*****',
+        'secure_agent' => 'ssl',
+        'insecure_agent' => 'tls',
+        'secure_port' => 465,
+        'non_secure_port' => 587,
+        'username' => '*******',
+        'password' => '*********',
+        'from' => '*****'
+    ],
+    'LOGGER' => [
+        'PATH' => __DIR__ . '/logs',
+        'EXTENSION' => 'log'
+    ]
+];

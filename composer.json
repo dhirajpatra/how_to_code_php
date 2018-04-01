@@ -1,0 +1,15 @@
+{
+  "name": "csvtest",
+  "description": "This will generate xml/csv file as per template call. Templates are solely specific sql and headers for their respective templatet.",
+  "type": "project",
+  "require": {
+    "phpoffice/phpspreadsheet": "^1.2",
+    "swiftmailer/swiftmailer": "^6.0",
+    "katzgrau/klogger": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Utils\\": "utils/"
+    }
+  }
+}
