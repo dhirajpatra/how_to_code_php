@@ -12,7 +12,7 @@ class DateCheck
      * @return bool
      * @throws \Exception
      */
-    public function validateDate($date, $format = 'Y-m-d')
+    public function validateDate(string $date, string $format = 'Y-m-d')
     {
         if (!$this->checkExtremeDate($date)) {
             throw new \Exception('Invalid date, date is either < 19700101 or > current date');
@@ -28,7 +28,7 @@ class DateCheck
      * @return bool
      * @throws \Exception
      */
-    public function compareDates($startDate, $endDate)
+    public function compareDates(string $startDate, string $endDate)
     {
         $sd = date_create(date('Y-m-d', strtotime($startDate)));
         $ed = date_create(date('Y-m-d', strtotime($endDate)));
@@ -79,7 +79,7 @@ class DateCheck
      * @param $date
      * @return bool
      */
-    private function checkExtremeDate($date)
+    private function checkExtremeDate(string $date)
     {
 
         try {
