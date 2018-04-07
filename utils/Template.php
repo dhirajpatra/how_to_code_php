@@ -78,9 +78,9 @@ abstract class Template
 
     /**
      * @param $data
-     * @return bool|int
+     * @return int
      */
-    public function sendEmail($data)
+    public function sendEmail($data) : int
     {
 
         try {
@@ -100,7 +100,7 @@ abstract class Template
             $this->logger->error($e->getMessage() . __METHOD__);
         }
 
-        return false;
+        return 0;
     }
 
     /**
