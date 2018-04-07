@@ -30,7 +30,7 @@ class Helper
      * @param $argv
      * @return array
      */
-    public function getInputs($argc, $argv)
+    public function getInputs($argc, $argv) : array
     {
 
         $data = [];
