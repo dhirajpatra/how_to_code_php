@@ -85,9 +85,9 @@ class Template1 extends Template
     }
 
     /**
-     * @return array
+     * @return int
      */
-    public function getResultFromSql()
+    public function getResultFromSql() : int
     {
 
         try {
@@ -152,7 +152,7 @@ class Template1 extends Template
     /**
      * @return bool
      */
-    public function setResultToCsv()
+    public function setResultToCsv() : bool
     {
 
         try {
